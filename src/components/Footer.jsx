@@ -4,9 +4,9 @@ import { Container, Typography, Link } from "@mui/material";
 function Footer() {
   return (
     <div>
-      <footer style={{ backgroundColor: "#f8f9fa" }}>
+      <footer style={{ backgroundColor: "#f6f6f6" }}>
         <Container maxWidth="lg" style={{ padding: "25px" }}>
-          <Typography variant="h6" align="center">
+          <Typography variant="h6" align="center" color="#05396b">
             Rupesh Lights & Truss
           </Typography>
           <div
@@ -33,7 +33,7 @@ function Footer() {
             color="#444"
             style={{ padding: "5px" }}
           >
-            2022 © Rupesh Lights, All Rights Reserved
+            2023 © Rupesh Lights, All Rights Reserved
           </Typography>
         </Container>
       </footer>

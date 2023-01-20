@@ -12,10 +12,16 @@ import { cards } from "./Data";
 function About() {
   return (
     <div className="cards" id="about">
-      <Typography variant="h5" className="title" component="div" align="center">
-        About
+      <Typography
+        variant="h4"
+        className="title"
+        component="div"
+        align="center"
+        color="#05396b"
+      >
+        Gallery
       </Typography>
-      <Container maxWidth="lg" style={{ padding: "20px 20px" }}>
+      <Container maxWidth="lg" style={{ padding: "40px 20px" }}>
         <Grid container spacing={4}>
           {cards.map((card) => {
             return (

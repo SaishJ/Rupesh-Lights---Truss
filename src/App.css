@@ -32,3 +32,41 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.hero {
+  margin-top: 35px;
+}
+
+.cards,
+.contact {
+  margin-top: 45px;
+}
+
+@keyframes glitch {
+  0%,
+  55.1%,
+  100% {
+    background: url("./res/logo-1.png");
+    background-size: cover;
+  }
+  50% {
+    background: url("./res/rl-glitch-1.png");
+    background-size: cover;
+  }
+  52.5% {
+    background: url("./res/rl-glitch-2.png");
+    background-size: cover;
+  }
+  55% {
+    background: url("./res/rl-glitch-3.png");
+    background-size: cover;
+  }
+}
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  background: url("./res/logo-1.png");
+  background-size: cover;
+  animation: glitch 3.7s infinite steps(1);
+}
