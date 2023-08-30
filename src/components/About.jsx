@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Box,
   Card,
   CardContent,
   CardMedia,
@@ -11,13 +12,16 @@ import { cards } from "./Data";
 
 function About() {
   return (
-    <div className="cards" id="about">
+    <Box mt={{ sm: 8, md: 12 }} className="cards" id="about">
       <Typography
-        variant="h4"
         className="title"
-        component="div"
         align="center"
         color="#05396b"
+        fontSize={30}
+        fontWeight={600}
+        fontFamily="Poppins"
+        letterSpacing={1}
+        data-aos="zoom-in-up"
       >
         Gallery
       </Typography>
@@ -26,13 +30,16 @@ function About() {
           {cards.map((card) => {
             return (
               <Grid item key={card.id} xs={12} sm={6} md={4}>
-                <Card elevation={3}>
+                <Card elevation={3} data-aos="fade-up" data-aos-duration="1500">
                   <CardMedia component="img" image={card.image} />
                   <CardContent>
                     <Typography
-                      variant="h6"
+                      // variant="subtitle1"
+                      fontSize={18}
+                      fontWeight={600}
                       component="div"
                       align="center"
+                      fontFamily="Poppins"
                       style={{ padding: "2px 0" }}
                     >
                       {card.title}
@@ -44,7 +51,7 @@ function About() {
           })}
         </Grid>
       </Container>
-    </div>
+    </Box>
   );
 }
 

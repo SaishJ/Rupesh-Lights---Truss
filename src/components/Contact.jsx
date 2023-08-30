@@ -1,41 +1,103 @@
 import React from "react";
-import { Container, Typography, Grid } from "@mui/material";
+import { Box, Container, Typography, Grid } from "@mui/material";
 
 function Contact() {
   return (
-    <div className="contact" id="contact">
-      <Typography variant="h4" component="div" align="center" color="#05396b">
+    <Box
+      mt={{ sm: 5, md: 8 }}
+      className="contact"
+      id="contact"
+      overflow="hidden"
+    >
+      <Typography
+        variant="h4"
+        align="center"
+        color="#05396b"
+        fontSize={30}
+        fontWeight={600}
+        fontFamily="Poppins"
+        letterSpacing={1}
+        data-aos="zoom-in-up"
+      >
         Contact
       </Typography>
       <Container maxWidth="md" style={{ padding: "40px 20px" }}>
         <Grid container spacing={4}>
-          <Grid item xs={12} sm={6} md={6}>
-            <Typography variant="h6" gutterbottom="true">
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
+            <Typography
+              variant="h6"
+              gutterbottom="true"
+              fontFamily="Poppins"
+              fontWeight={600}
+            >
               Address
             </Typography>
-            <Typography variant="subtitle1" gutterbottom="true" component="p">
-              608/6, Building no.3, <br />
-              Panchsheel Hsg. Society, <br />
-              E Moses Rd, Worli Naka,
+            <Typography
+              variant="subtitle1"
+              gutterbottom="true"
+              component="p"
+              fontFamily="Poppins"
+            >
+              Rupesh Lights, <br />
+              Janata Seva mandal, <br />
+              Dainik shivneri marg,
               <br />
-              Mumbai, Maharashtra 400018
+              Gandhi Nagar, <br />
+              Mumbai, Maharashtra 400013
             </Typography>
-            <Typography variant="h6" gutterbottom="true">
+            <Typography
+              pt={0.5}
+              variant="h6"
+              gutterbottom="true"
+              fontFamily="Poppins"
+              fontWeight={600}
+            >
               Phone
             </Typography>
-            <Typography variant="subtitle1" gutterbottom="true" component="p">
-              9967202648
+            <Typography
+              variant="subtitle1"
+              gutterbottom="true"
+              component="p"
+              fontFamily="Poppins"
+            >
+              <a href="tel:+919967202648">9967202648</a>
             </Typography>
-            <Typography variant="h6" gutterbottom="true">
+            <Typography
+              pt={0.5}
+              variant="h6"
+              gutterbottom="true"
+              fontFamily="Poppins"
+              fontWeight={600}
+            >
               Email
             </Typography>
-            <Typography variant="subtitle1" gutterbottom="true" component="p">
-              rupeshlights@gmail.com
+            <Typography
+              variant="subtitle1"
+              gutterbottom="true"
+              component="p"
+              fontFamily="Poppins"
+            >
+              <a href="mailto:rupeshlights@gmail.com">rupeshlights@gmail.com</a>
             </Typography>
           </Grid>
-          <Grid item xs={12} sm={6} md={6} style={{ overflow: "hidden" }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            style={{ overflow: "hidden" }}
+            data-aos="fade-left"
+            data-aos-duration="1500"
+          >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.1054760597085!2d72.81460481421145!3d18.995664759430564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cff4d5fe753d%3A0x9cb1c960e6f53ea4!2sRUPESH%20LIGHTS%20%26%20TRUSS!5e1!3m2!1sen!2sin!4v1663839667427!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3197.7839945063424!2d72.82209584520298!3d18.99763568175991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDU5JzUxLjYiTiA3MsKwNDknMTkuMSJF!5e1!3m2!1sen!2sin!4v1693393284086!5m2!1sen!2sin"
               width="350"
               height="350"
               style={{ border: "0" }}
@@ -46,7 +108,7 @@ function Contact() {
           </Grid>
         </Grid>
       </Container>
-    </div>
+    </Box>
   );
 }
 

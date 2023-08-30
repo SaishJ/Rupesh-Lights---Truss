@@ -6,6 +6,7 @@ import {
   Link,
   Typography,
   Grid,
+  Stack,
 } from "@mui/material";
 
 function Navbar() {
@@ -14,7 +15,7 @@ function Navbar() {
       <CssBaseline />
       <AppBar
         position="sticky"
-        style={{
+        sx={{
           backdropFilter: "blur(20px)",
           background: "rgba(255, 255, 255, 0.7)",
           boxShadow: "none",
@@ -25,7 +26,7 @@ function Navbar() {
           transition: "top 195ms cubic-bezier(0.4, 0, 1, 1) 0ms",
         }}
       >
-        <Toolbar>
+        {/* <Toolbar>
           <Grid
             container
             spacing={4}
@@ -58,6 +59,31 @@ function Navbar() {
               </Link>
             </Grid>
           </Grid>
+        </Toolbar> */}
+        <Toolbar>
+          <Stack
+            flex={1}
+            flexDirection="row"
+            alignItems="center !important"
+            justifyContent="center !important"
+            gap={3}
+          >
+            <Link href="#home" underline="none">
+              <Typography color="#000000" fontFamily="Poppins" fontSize={18}>
+                Home
+              </Typography>
+            </Link>
+            <Link href="#about" underline="none">
+              <Typography color="#000000" fontFamily="Poppins" fontSize={18}>
+                About
+              </Typography>
+            </Link>
+            <Link href="#contact" underline="none">
+              <Typography color="#000000" fontFamily="Poppins" fontSize={18}>
+                Contact
+              </Typography>
+            </Link>
+          </Stack>
         </Toolbar>
       </AppBar>
     </>
