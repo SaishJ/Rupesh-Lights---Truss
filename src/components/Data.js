@@ -167,4 +167,10 @@ export const cards = [
     image:
       "https://user-images.githubusercontent.com/59008917/191667752-64da2003-4c1c-4029-8b8d-41b2eae8653a.jpeg",
   },
+  {
+    id: 29,
+    title: "Arangetram",
+    image:
+      "https://github.com/SaishJ/SaishJ/assets/59008917/f5059ac4-3228-4037-b844-c8b73ec37358",
+  },
 ];

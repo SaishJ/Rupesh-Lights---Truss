@@ -58,7 +58,7 @@ function Footer() {
             </Link>
           </Stack>
           <Typography pt={1} align="center" color="#444" fontFamily="Poppins">
-            2023 © Rupesh Lights, All Rights Reserved
+            2024 © Rupesh Lights, All Rights Reserved
           </Typography>
         </Container>
       </footer>
